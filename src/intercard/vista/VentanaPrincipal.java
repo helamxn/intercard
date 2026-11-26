@@ -56,6 +56,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+
         panelEncabezado = new javax.swing.JPanel();
         lblTituloSistema = new javax.swing.JLabel();
         panelSesion = new javax.swing.JPanel();

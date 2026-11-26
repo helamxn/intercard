@@ -37,6 +37,7 @@ public class PanelHistorialVentas extends javax.swing.JPanel {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+
         panelFiltros = new javax.swing.JPanel();
         lblTipo = new javax.swing.JLabel();
         cboTipo = new javax.swing.JComboBox<>();
