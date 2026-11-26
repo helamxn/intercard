@@ -1,0 +1,6 @@
+# Archivos generados al compilar con NetBeans / Ant
+/build/
+/dist/
+
+# Configuración personal de NetBeans (rutas propias de cada equipo)
+/nbproject/private/
