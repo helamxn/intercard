@@ -1,5 +1,6 @@
 package intercard;
 
+import com.formdev.flatlaf.FlatLightLaf;
 import intercard.datos.Conexion;
 import intercard.logica.SistemaVentas;
 import intercard.vista.VentanaLogin;
@@ -23,6 +24,9 @@ import javax.swing.JOptionPane;
 public class InterCard {
 
     public static void main(String[] args) {
+        // Se aplica el estilo FlatLaf (tema claro) antes de crear cualquier ventana
+        FlatLightLaf.setup();
+
         // Antes de abrir el sistema se comprueba que la base de datos responde
         try {
             Conexion.probarConexion();
@@ -42,7 +46,6 @@ public class InterCard {
         // Se crea un solo objeto SistemaVentas y se comparte con todas las ventanas
         SistemaVentas sistema = new SistemaVentas();
 
-        // Se usa el aspecto predeterminado (Default) de Swing, sin estilos personalizados
         java.awt.EventQueue.invokeLater(() -> {
             VentanaLogin login = new VentanaLogin(sistema);
             login.setVisible(true);
